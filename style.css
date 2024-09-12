@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: -50vw -60vw, 35vw 25vw;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 320px;
+    border-radius: 1rem;
+    background-color: white;
+
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    border-radius: 1rem 1rem 0 0;
+    height: 75%;
+    padding: 1.5rem;
+}
+
+.profile img {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 0.2rem;
+    border-style: solid;
+}
+
+.profile .user {
+    position: absolute;
+    bottom: 1.5rem;
+    color: hsl(227, 10%, 46%);
+    text-align: center;
+}
+
+.user div:first-child {
+    margin-block-end: 0.5rem;
+}
+
+.user div span{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.user div span:first-child{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.DATA {
+    display: flex;
+    padding: 1.5rem;
+}
+
+.data {
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: hsl(229, 23%, 23%);
+}
+
+.label {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+        
+footer {
+    position: fixed;
+    bottom: 1vh;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+    body {
+        background-size: 100vh;
+        background-position: -70vh -50vh, 25vh 50vh;
+    }
+
+    @media screen and (min-width: 540px){
+        body {
+            background-position: -70vh -50vh, 40vh 50vh;
+        }
+    }
+} 
+
+
